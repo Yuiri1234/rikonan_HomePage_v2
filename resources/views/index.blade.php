@@ -14,16 +14,9 @@
             image_name: string
             image_path: string
             -->
-            <img class="top-image" src="image/hamasuta0.jpg" alt="">
-            <img class="top-image" src="image/image10.jpg" alt="">
-            <img class="top-image" src="image/image8.jpg" alt="">
-            <img class="top-image" src="image/image9.jpg" alt="">
-            <img class="top-image" src="image/image6.jpg" alt="">
-            <img class="top-image" src="image/image7.jpg" alt="">
-            <img class="top-image" src="image/image0.jpg" alt="">
-            <img class="top-image" src="image/image1.jpg" alt="">
-            <img class="top-image" src="image/image2.jpg" alt="">
-            <img class="top-image" src="image/image3.jpg" alt="">
+            @foreach($slider_images as $slider_image)
+                <img class="top-image" src="{{ $slider_image->image_path }}" alt="{{ $slider_image->image_name }}">
+            @endforeach
         </div>
     </div>
     <script src="js/slick.js"></script>
