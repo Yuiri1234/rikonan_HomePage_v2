@@ -1,0 +1,161 @@
+h3 {
+    margin: 0 0 10px 10%;
+    padding-top: 20px;
+    font-size: 24px;
+}
+
+h4 {
+    margin-left: 9%;
+    font-size: 22px;
+}
+
+.item {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #f7f7f4;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(182, 181, 181);
+}
+
+.item h5 {
+    margin: 0;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.item table {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.item th {
+    font-size: 20px;
+}
+
+.item a {
+    color: rgb(93, 93, 209);
+}
+
+.item a:hover {
+    color: rgb(9, 9, 255)
+}
+
+p {
+    margin-left: 9%;
+    font-size: 18px;
+}
+
+details {
+    width: 80%;
+    margin: 0 9%;
+    font-size: 20px;
+    border: 1px solid rgb(182, 181, 181);
+    background-color: white;
+}
+
+main {
+    padding-bottom: 20px;
+}
+
+.gameName {
+    margin: 0 9%;
+    font-size: 18px;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+details:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+details summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    background: #f7f7f4;
+    color: #242323;
+    font-weight: bold;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary::before {
+    font-family: FontAwesome;
+    content: '\f067';
+    margin-right: 20px;
+}
+
+details p {
+    margin: 0;
+    padding: 10px;
+}
+
+details a {
+    margin: 0;
+    padding: 20px;
+}
+
+details[open] .details-content {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.image {
+    width: 80%;
+}
+
+.image img {
+    margin-left: 2%;
+    margin-bottom: 20px;
+    width: 30%;
+    height: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.container {
+    margin-left: 2%;
+    margin-bottom: 20px;
+    width: 48%;
+    float: left;
+    text-align: center;
+}
+
+.container img {
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+}
+
+@media(max-width: 600px) {
+    .item{
+        padding: 10px;
+        width: 75%;
+    }
+    .item table{
+        width: 100%;
+    }
+    .item th {
+        font-size: 15px;
+        padding: 2px;
+    }
+}

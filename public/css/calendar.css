@@ -1,0 +1,118 @@
+.cld-main{
+   width: 90%;
+   margin: 0 auto;
+   padding-top: 20px;
+   padding-bottom: 50px;
+   background-color: white;
+}
+.cld-main a{
+   color: #0080FF;
+}
+.cld-main svg{
+   fill: #0080FF;
+}
+.cld-datetime{
+   position: relative;
+   padding: 20px 0px;
+   max-width: 500px;
+   margin: auto;
+   overflow: hidden;
+}
+.cld-datetime .today{
+   position: relative;
+   float: left;
+   width: calc(100% - 40px);
+   margin: auto;
+   text-align: center;
+}
+.cld-nav{
+   position: relative;
+   width: 20px;
+   height: 20px;
+   margin-top: 2px;
+}
+.cld-nav:hover{
+  cursor: pointer;
+}
+.cld-nav:hover svg{
+   fill: #005EFF;
+}
+.cld-rwd{
+   float: left;
+}
+.cld-fwd{
+   float: right;
+}
+.cld-labels,
+.cld-days{
+   padding-left: 0;
+}
+.cld-label,
+.cld-day{
+   box-sizing: border-box;
+   display: inline-block;
+   width: 14.28%;
+   text-align: center;
+}
+.cld-day{
+   border: 1px solid rgb(160, 158, 158);
+}
+.cld-day.today .cld-number{
+   background: #e3e4f3;
+   color: rgb(0, 0, 0);
+}
+.cld-day.disableDay{
+   opacity: 0.5;
+}
+.cld-day.nextMonth,
+.cld-day.prevMonth{
+   opacity: 0.33;
+}
+.cld-number{
+   position: relative;
+   margin: 0;
+   padding: 10px;
+}
+.cld-title{
+   position: absolute;
+   z-index: 5;
+   display: none;
+   top: 28px;
+   left: 0;
+   padding: 3px 8px;
+   background: #fff;
+   white-space: nowrap;
+   border: 1px solid rgb(160, 158, 158);
+   border-radius: 5px;
+   font-size: 18px;
+}
+.cld-number:hover .cld-title{
+   display: block;
+}
+.cld-title::before{
+   content: '';
+   position: absolute;
+   top: -7.5px; left: 10px;
+   width: 0;
+   height: 0;
+}
+.cld-number.eventday{
+   font-weight: bold;
+   color: #005EFF;
+}
+.cld-number.eventday:hover{
+   cursor: pointer;
+   background: #eee;
+}
+.today .cld-number.eventday:hover{
+   background: #005EFF;
+}
+
+@media(max-width: 600px){
+   a{
+      font-size: 12px;
+   }
+   .cld-title{
+      padding: 0 5px;
+   }
+}

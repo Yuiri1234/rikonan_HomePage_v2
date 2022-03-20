@@ -1,0 +1,42 @@
+h3{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 24px;
+}
+
+h4{
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+main{
+    padding: 5px 10%;
+}
+
+.gameDetail{
+    text-align: center;
+}
+
+table{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+th,td {
+    border: solid 1px;  /* 枠線指定 */
+    padding: 10px;      /* 余白指定 */
+    text-align: center;
+}
+
+@media(max-width: 600px){
+    table{
+        font-size: 8px;
+    }
+
+    th,td {
+        padding: 5px;
+    }
+}

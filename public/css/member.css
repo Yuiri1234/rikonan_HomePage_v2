@@ -1,0 +1,35 @@
+h4{
+    margin-top: 0;
+    margin-left: 8%;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+table{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+    border-collapse: collapse;
+    text-align:center;
+}
+
+th,td {
+    border: solid 1px;  /* 枠線指定 */
+    padding: 10px;      /* 余白指定 */
+}
+
+main{
+    padding-bottom: 30px;
+}
+
+.googleSurvey{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.googleSurvey img{
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+}

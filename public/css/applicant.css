@@ -1,0 +1,92 @@
+h3{
+  margin: 0;
+  margin-left: 10%;
+  padding: 20px 0 0 0;
+  font-size: 24px;
+}
+
+.main{
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+/* 吹き出し本体 */
+.balloon1{
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  color: #0e0d0d;
+  background-image: url("../css/Pattern-Randomized.svg");
+  margin: 30px 0 30px 13%;
+}
+/* 画像 - 絶対配置で左上に配置 */
+.balloon1 .icon{
+  position: absolute;
+  left: -13%;
+  top: 0;
+}
+/* 三角アイコン */
+.balloon1::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: -15px;
+  top: 20px;
+  background-image: url("../css/Pattern-Randomized.svg");
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+/* 吹き出し本体 */
+.balloon2{
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  color: #0e0d0d;
+  background-image: url("../css/Pattern-Randomized1.svg");
+  margin: 30px 13% 30px 0;
+}
+/* 画像 - 絶対配置で右上に配置 */
+.balloon2 .icon{
+  position: absolute;
+  right: -13%;
+  top: 0;
+}
+/* 三角アイコン */
+.balloon2::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  right: -15px;
+  top: 20px;
+  background-image: url("../css/Pattern-Randomized1.svg");
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+img{
+  width: 15%;
+}
+
+@media(max-width: 600px){
+  .icon{
+    display: none;
+  }
+  .balloon1{
+    margin: 30px 0;
+  }
+  .balloon1 .icon{
+    left: 0;
+  }
+  .balloon2{
+    margin: 30px 0;
+  }
+  .balloon2 .icon{
+    right: 0;
+  }
+}
