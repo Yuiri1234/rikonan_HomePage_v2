@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\ActivityPlaceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,11 +16,9 @@ use App\Http\Controllers\IndexController;
 |
 */
 
+Route::get('/', [IndexController::class, 'index']);
 Route::get('/index', [IndexController::class, 'index']);
-
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/activityPlace', [ActivityPlaceController::class, 'index']);
 
 Route::get('/{category}', function($category){
     return view($category);
