@@ -18,7 +18,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             SliderImagesTableSeeder::class,
             AnnualSchedulesTableSeeder::class,
-            ActivityPlacesTableSeeder::class
+            ActivityPlacesTableSeeder::class,
+            MemberMessagesTableSeeder::class
         ]);
     }
 }
