@@ -12,24 +12,10 @@
 
 @section('content')
     <h2>YouTube</h2>
-    <div class="video">
-        <iframe src="https://www.youtube.com/embed/FfBQdDMzM7Y" frameborder="0" allow="accelerometer;
+    @foreach($youtubes as $youtube)
+        <div class="youtube">
+            <iframe src="{{ $youtube->link }}" frameborder="0" allow="accelerometer;
          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="video">
-        <iframe src="https://www.youtube.com/embed/iqipJcNFAr4" frameborder="0" allow="accelerometer;
-         autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="video">
-        <iframe src="https://www.youtube.com/embed/0D8miCcN_OA" frameborder="0" allow="accelerometer;
-         autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="video">
-        <iframe src="https://www.youtube.com/embed/uGbcW_5RBe4" frameborder="0" allow="accelerometer;
-         autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="video">
-        <iframe src="https://www.youtube.com/embed/s3B4xUq0Dng" frameborder="0" allow="accelerometer;
-         autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+        </div>
+    @endforeach
 @endsection

@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ActivityPlaceController;
 use App\Http\Controllers\ApplicantController;
+use App\Http\Controllers\MoviesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,7 @@ Route::get('/', [IndexController::class, 'index']);
 Route::get('/index', [IndexController::class, 'index']);
 Route::get('/activityPlace', [ActivityPlaceController::class, 'index']);
 Route::get('/applicant', [ApplicantController::class, 'index']);
+Route::get('/movies', [MoviesController::class, 'index']);
 Route::get('/{category}', function($category){
     return view($category);
 });

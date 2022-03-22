@@ -19,7 +19,8 @@ class DatabaseSeeder extends Seeder
             SliderImagesTableSeeder::class,
             AnnualSchedulesTableSeeder::class,
             ActivityPlacesTableSeeder::class,
-            MemberMessagesTableSeeder::class
+            MemberMessagesTableSeeder::class,
+            YoutubesTableSeeder::class
         ]);
     }
 }
