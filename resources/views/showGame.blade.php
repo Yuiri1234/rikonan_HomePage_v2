@@ -16,7 +16,7 @@ foreach ($bot_score as $bot_score_inning){
 @include('layout.head')
 @section('title', '青山学院大学理工軟式野球部/公式戦')
 @section('description', '青学りこなんのリーグ戦、東日本大会などの公式戦結果を掲載。')
-<link rel="stylesheet" href="css/game.css">
+<link rel="stylesheet" href="/css/game.css">
 
 @section('content')
     <h3>{{ $game->date }} {{ $game->tournament_name }} VS{{ $game->opposing_team }}</h3>

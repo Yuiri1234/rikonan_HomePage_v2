@@ -2,8 +2,8 @@
 @include('layout.head')
 @section('title', '青山学院大学理工軟式野球部/部員')
 @section('description', '青学りこなんの部員情報を詳細にまとめたページ。学部・学科、第二外国語、野球経験、兼サー数、現役・浪人、アルバイトの頻度、移住形態などをアンケートをもとに掲載。')
-<link rel="stylesheet" href="css/member.css">
-<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="/css/member.css">
+<link rel="stylesheet" href="/css/animation.css">
 
 @section('content')
     <h4>部員数</h4>
@@ -46,9 +46,9 @@
 
     <h4>部員へのアンケート</h4>
     <div class="googleSurvey">
-        <img src="image/question1.png">
-        <img src="image/question2.png" class="animation">
-        <img src="image/question3.png" class="animation">
+        <img src="/image/question1.png">
+        <img src="/image/question2.png" class="animation">
+        <img src="/image/question3.png" class="animation">
     </div>
-    <script src="js/animation.js"></script>
+    <script src="/js/animation.js"></script>
 @endsection

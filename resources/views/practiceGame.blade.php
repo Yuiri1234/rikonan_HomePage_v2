@@ -2,7 +2,7 @@
 @include('layout.head')
 @section('title', '青山学院大学理工軟式野球部/練習試合')
 @section('description', '青学りこなんのリーグ戦、上部大会へ向けての練習試合結果を掲載。練習試合相手も募集中。')
-<link rel="stylesheet" href="css/details.css">
+<link rel="stylesheet" href="/css/details.css">
 
 @section('content')
     <h3>練習試合</h3>

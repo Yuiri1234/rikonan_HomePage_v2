@@ -2,7 +2,7 @@
 @include('layout.head')
 @section('title', '青山学院大学理工軟式野球部/CONTACT')
 @section('description', '青学りこなんへのメールフォーム。SNS(Twitter, Instagram)のアカウントをお持ちでない方はご質問をしてください。練習試合申し込みもこちらからご連絡ください。')
-<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="/css/contact.css">
 
 @section('content')
     <div id="formWrap">

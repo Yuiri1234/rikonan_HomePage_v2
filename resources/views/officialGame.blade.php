@@ -34,7 +34,7 @@ foreach ($games as $game) {
 @include('layout.head')
 @section('title', '青山学院大学理工軟式野球部/公式戦')
 @section('description', '青学りこなんのリーグ戦、東日本大会などの公式戦結果を掲載。')
-<link rel="stylesheet" href="css/details.css">
+<link rel="stylesheet" href="/css/details.css">
 
 @section('content')
     <h3>公式戦</h3>

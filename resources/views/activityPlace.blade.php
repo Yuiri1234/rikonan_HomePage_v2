@@ -2,8 +2,8 @@
 @include('layout.head')
 @section('title', '青山学院大学理工軟式野球部/活動場所')
 @section('description', '青学りこなんの活動場所。主な活動場所は相模原キャンパスの最寄りである横浜線淵野辺駅から徒歩約5分の鹿沼公園。授業の合間に活動へ参加も可能。')
-<link rel="stylesheet" href="css/details.css">
-<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="/css/details.css">
+<link rel="stylesheet" href="/css/animation.css">
 
 @section('content')
     <h3>練習場所</h3>

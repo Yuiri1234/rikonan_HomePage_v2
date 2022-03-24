@@ -2,8 +2,8 @@
 @include('layout.head')
 @section('title', '青山学院大学理工軟式野球部/練習内容')
 @section('description', '青学りこなんの練習で何を行うかを掲載。チームが強くなるための連携プレーに力を入れて練習を行います。中学・高校の部活とはまた違う雰囲気の自分たちで考えた練習です。')
-<link rel="stylesheet" href="css/details.css">
-<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="/css/details.css">
+<link rel="stylesheet" href="/css/animation.css">
 
 @section('content')
     <h3 class="fadein">練習メニュー</h3>
@@ -64,5 +64,5 @@
             <p>3チームに分けることで15人ほど人がいれば成り立ちます。</p>
         </div>
     </details>
-    <script src="js/animation.js"></script>
+    <script src="/js/animation.js"></script>
 @endsection

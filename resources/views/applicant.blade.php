@@ -2,8 +2,8 @@
 @include('layout.head')
 @section('title', '青山学院大学理工軟式野球部/部員からのメッセージ')
 @section('description', '青学りこなんの選手・マネージャーからのメッセージ。彼らのりこなん愛に溢れるコメントをチェック！')
-<link rel="stylesheet" href="css/applicant.css">
-<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="/css/applicant.css">
+<link rel="stylesheet" href="/css/animation.css">
 
 @section('content')
     <h3>新入生の皆さまへ</h3>
@@ -26,5 +26,5 @@
             </div>
         @endforeach
     </div>
-    <script src="js/animation.js"></script>
+    <script src="/js/animation.js"></script>
 @endsection

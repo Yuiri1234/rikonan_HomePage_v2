@@ -1,7 +1,7 @@
 <header>
     <div class="head">
         <h1>青山学院大学理工軟式野球部</h1>
-        <script src="js/fadein.js"></script>
+        <script src="/js/fadein.js"></script>
     </div>
     <nav id="global-nav">
         <div class="inner">
@@ -30,6 +30,6 @@
             </ul>
         </div>
     </nav>
-    <script src="js/fold.js"></script>
-    <script type="text/javascript" src="js/header_fixed.js"></script>
+    <script src="/js/fold.js"></script>
+    <script type="text/javascript" src="/js/header_fixed.js"></script>
 </header>

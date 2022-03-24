@@ -2,8 +2,8 @@
 @include('layout.head')
 @section('title', '【公式】青山学院大学理工軟式野球部 りこなん')
 @section('description', '青学相模原キャンパスの生徒を中心に活動する軟式野球部。サークルと体育会部活の中間的な団体。真剣かつ楽しく取り組み、勉強やバイトと両立できます。選手、マネージャーどちらも大歓迎。')
-<link rel="stylesheet" href="css/index.css">
-<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/animation.css">
 
 @section('content')
     <div class="wrapper">
@@ -13,7 +13,7 @@
             @endforeach
         </div>
     </div>
-    <script src="js/slick.js"></script>
+    <script src="/js/slick.js"></script>
     <h2>INTRO MOVIE</h2>
     <div class="video">
         <iframe src="https://www.youtube.com/embed/fRWFTrM90RM" frameborder="0" allow="accelerometer;
@@ -21,7 +21,7 @@
     </div>
     <div class="goal">
         <h2>GOAL</h2>
-        <video src="./movie/goal.mp4" playsinline muted autoplay></video>
+        <video src="/movie/goal.mp4" playsinline muted autoplay></video>
     </div>
     <div class="news">
         <h2>WHAT IS NEW</h2>
@@ -35,7 +35,7 @@
         <h2>FROM THE 50th GENERATION</h2>
         @include('articles.from_the_50th_genaration')
         <div>
-            <img class="image" src="image/image11.jpg">
+            <img class="image" src="/image/image11.jpg">
         </div>
     </div>
     <div class="annualSchedule">
@@ -71,12 +71,12 @@
             <h3>Instagram</h3>
             <div class="img_wrap">
                 <a href="https://www.instagram.com/aoyama.rikonan/" target="_blank">
-                    <img src="image/image5.jpg" style="width:80%; padding: 0 10%;">
+                    <img src="/image/image5.jpg" style="width:80%; padding: 0 10%;">
                 </a>
             </div>
         </div>
     </div>
-    <script src="js/animation.js"></script>
+    <script src="/js/animation.js"></script>
 @endsection
 
 

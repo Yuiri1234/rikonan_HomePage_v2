@@ -2,8 +2,8 @@
 @include('layout.head')
 @section('title', '青山学院大学理工軟式野球部/FAQ')
 @section('description', '青学りこなんへ頻繁に頂く質問への回答をまとめたページ。Q&A。選手・マネージャーになりたいという方は是非こちらの情報を参考にしてください。')
-<link rel="stylesheet" href="css/details.css">
-<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="/css/details.css">
+<link rel="stylesheet" href="/css/animation.css">
 
 @section('content')
     <h3>FAQ</h3>
@@ -189,5 +189,5 @@
             <p>・りこなんへの一目惚れ</p>
         </div>
     </details>
-    <script src="js/animation.js"></script>
+    <script src="/js/animation.js"></script>
 @endsection
