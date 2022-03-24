@@ -14,7 +14,9 @@ class PracticeGameController extends Controller
         return view('practiceGame', ['games'=>$games]);
     }
 
-    public function show($game) {
+    public function show(Request $request, int $game_id) {
+        $game = GameScore::where('id', $game_id)->get()[0];
+
         return view('showGame', ['game'=>$game]);
     }
 }

@@ -7,6 +7,7 @@ use App\Http\Controllers\ActivityPlaceController;
 use App\Http\Controllers\ApplicantController;
 use App\Http\Controllers\MoviesController;
 use App\Http\Controllers\OfficialGameController;
+use App\Http\Controllers\PracticeGameController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,8 @@ Route::get('/applicant', [ApplicantController::class, 'index']);
 Route::get('/movies', [MoviesController::class, 'index']);
 Route::get('/officialGame', [OfficialGameController::class, 'index']);
 Route::get('/officialGame/{game_id}', [OfficialGameController::class, 'show'])->name('showGame');
+Route::get('/practiceGame', [PracticeGameController::class, 'index']);
+Route::get('/practiceGame/{game_id}', [PracticeGameController::class, 'show'])->name('showGame');
 Route::get('/{category}', function($category){
     return view($category);
 });
