@@ -20,7 +20,8 @@ class DatabaseSeeder extends Seeder
             AnnualSchedulesTableSeeder::class,
             ActivityPlacesTableSeeder::class,
             MemberMessagesTableSeeder::class,
-            YoutubesTableSeeder::class
+            YoutubesTableSeeder::class,
+            GameScoresTableSeeder::class
         ]);
     }
 }

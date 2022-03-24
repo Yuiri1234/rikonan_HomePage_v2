@@ -6,10 +6,29 @@
 
 @section('content')
     <!--
-    うまく書けるように工夫するべき
+    game_scores_table
+    id : integer
+    type : string (official or practice)
+    date : date
+    tournament_name : string
+    outcome : string (victory or defeat)
+    opposing_team : string
+    stadium : string
+    top_team : string
+    bot_team : string
+    top_score : string (,区切り)
+    bot_score : string (,区切り)
+    top_hit_num : integer
+    top_error_num : integer
+    bot_hit_num : integer
+    bot_error_num : integer
+    summary : string
     -->
     <h3>公式戦</h3>
     <p class="kaushan">50th　通算：6勝5敗</p>
+    @foreach($games as $game)
+        <a class="gameName" href="{{ route('showGame', ['game_id'=>$game->id]) }}">{{ $game->date }} {{ $game->tournament_name }}　●　VS{{ $game->opposing_team }}</a><br>
+    @endforeach
     <a class="gameName" href="officialGame/20211122.html">2021/11/22 東日本大会　●　VS愛知</a><br>
     <a class="gameName" href="officialGame/20211121.html">2021/11/21 東日本大会　〇　VS東学</a><br>
     <a class="gameName" href="officialGame/20211103.html">2021/11/03 秋季リーグ　〇　VS成蹊</a><br>
