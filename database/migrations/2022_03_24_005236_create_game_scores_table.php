@@ -15,10 +15,11 @@ return new class extends Migration
     {
         Schema::create('game_scores', function (Blueprint $table) {
             $table->id();
+            $table->integer('generation');
             $table->string('type');
             $table->date('date');
             $table->string('tournament_name');
-            $table->string('outcome'); // victory or defeat
+            $table->string('outcome'); // victory or defeat or draw
             $table->string('opposing_team');
             $table->string('stadium');
             $table->string('top_team');

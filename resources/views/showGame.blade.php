@@ -55,6 +55,8 @@ foreach ($bot_score as $bot_score_inning){
         </table>
     </div>
 
-    <h4>試合概要</h4>
-    <p>{{ $game->summary }}</p>
+    @if( $game->summary !== '')
+        <h4>試合概要</h4>
+        <p>{{ $game->summary }}</p>
+    @endif
 @endsection

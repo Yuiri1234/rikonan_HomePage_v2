@@ -20,7 +20,7 @@ main{
 table{
     width: 70%;
     height: auto;
-    margin: 0 auto;
+    margin: 30px auto;
     background-color: white;
     border-collapse: collapse;
 }
