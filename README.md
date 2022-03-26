@@ -19,3 +19,13 @@
 - ルーター(routes/web.php)
 - コントローラー(app/Http/Controllers/)
 - モデル(app/Models/)
+
+## Add Data
+
+- seederにデータベースへ入れるためのコードをLaravelで書く
+- php artisan migrate:rollback
+- php artisan migrate
+- php artisan db:seed
+
+以上を実行すればhomepage.dbにデータが反映される
+
